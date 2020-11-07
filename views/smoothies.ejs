@@ -2,35 +2,89 @@
 
 <ul class="recipes">
   <li class="recipe">
-    <img src="/smoothie.png" alt="smoothie recipe icon">
-    <h4>Banana Boost</h4>
+    <img
+      src="/smoothie.png"
+      alt="smoothie recipe icon "
+      class="shop-item-image"
+    />
+    <h4 class="shop-item-title">Banana Boost</h4>
     <p>Banana, Vanilla ice cream, Milk</p>
+    <span class="shop-item-price">$11</span>
+    <button class="btn shop-item-button">Add Cart</button>
   </li>
   <li class="recipe">
-    <img src="/smoothie.png" alt="smoothie recipe icon">
-    <h4>Tropical Twist</h4>
+    <img
+      src="/smoothie.png"
+      alt="smoothie recipe icon "
+      class="shop-item-image"
+    />
+    <h4 class="shop-item-title">Tropical Twist</h4>
     <p>Peach, Pinapple, Apple juice</p>
+    <span class="shop-item-price">$12</span>
+    <button class="btn shop-item-button">Add Cart</button>
   </li>
   <li class="recipe">
-    <img src="/smoothie.png" alt="smoothie recipe icon">
-    <h4>Protein Packer</h4>
+    <img
+      src="/smoothie.png"
+      alt="smoothie recipe icon "
+      class="shop-item-image"
+    />
+    <h4 class="shop-item-title">Protein Packer</h4>
     <p>Oats, Peanut butter, Milk, Banana, Blueberries</p>
+    <span class="shop-item-price">$13</span>
+    <button class="btn shop-item-button">Add Cart</button>
   </li>
   <li class="recipe">
-    <img src="/smoothie.png" alt="smoothie recipe icon">
-    <h4>Banana Boost</h4>
+    <img
+      src="/smoothie.png"
+      alt="smoothie recipe icon "
+      class="shop-item-image"
+    />
+    <h4 class="shop-item-title">Banana Boost</h4>
     <p>Banana, Vanilla ice cream, Milk</p>
+    <span class="shop-item-price">$14</span>
+    <button class="btn shop-item-button">Add Cart</button>
   </li>
   <li class="recipe">
-    <img src="/smoothie.png" alt="smoothie recipe icon">
-    <h4>Tropical Twist</h4>
+    <img
+      src="/smoothie.png"
+      alt="smoothie recipe icon "
+      class="shop-item-image"
+    />
+    <h4 class="shop-item-title">Tropical Twist</h4>
     <p>Peach, Pinapple, Apple juice</p>
+    <span class="shop-item-price">$15</span>
+    <button class="btn shop-item-button">Add Cart</button>
   </li>
   <li class="recipe">
-    <img src="/smoothie.png" alt="smoothie recipe icon">
-    <h4>Protein Packer</h4>
+    <img
+      src="/smoothie.png"
+      alt="smoothie recipe icon "
+      class="shop-item-image"
+    />
+    <h4 class="shop-item-title">Protein Packer</h4>
     <p>Oats, Peanut butter, Milk, Banana, Blueberries</p>
+    <span class="shop-item-price">$16</span>
+    <button class="btn shop-item-button">Add Cart</button>
   </li>
 </ul>
+
+<section class="container content-section">
+  <h2 class="section-header">CART</h2>
+  <br />
+  <div class="cart-row">
+    <span class="cart-item cart-header cart-column">PRODUCT</span>
+    <span class="cart-price cart-header cart-column">PRICE</span>
+    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+  </div>
+  <div class="cart-items">
+    <!-- check script.js -->
+  </div>
+  <div class="cart-total">
+    <strong class="cart-total-title">Total $</strong>
+    <span class="cart-total-price">0</span>
+  </div>
+  <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
 
 <%- include('partials/footer'); -%>

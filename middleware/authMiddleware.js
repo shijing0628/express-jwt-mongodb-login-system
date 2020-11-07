@@ -22,7 +22,7 @@ const requireAuth = (req, res, next) => {
 }
 
 
-//check current user
+//check current user, display in the view of header once login
 const checkUser = (req, res, next) => {
  const token = req.cookies.jwt;
  if (token) {
