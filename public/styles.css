@@ -1,11 +1,21 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 20px 40px;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  background: #fafafa;
+  background: linear-gradient(
+      rgba(245, 147, 147, 0.5),
+      rgba(240, 183, 183, 0.1)
+    ),
+    url("images/cookie1.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
 }
 h1,
 h2,
@@ -55,6 +65,10 @@ nav li a {
 .btn {
   border-radius: 36px;
   background: #fee996;
+}
+.logo {
+  width: 100px;
+  height: 100px;
 }
 form h2 {
   font-size: 2.4em;
@@ -108,12 +122,13 @@ header img {
 header h2 {
   font-size: 3em;
   margin-bottom: 10px;
+  color: #fff;
 }
 header h3 {
   font-size: 1.6em;
   margin-bottom: 10px;
   margin-left: 2px;
-  color: #999;
+  color: #fff;
 }
 header .btn {
   margin-top: 20px;
@@ -140,7 +155,8 @@ header .btn {
   padding: 0 20px 30px 20px;
 }
 .recipe img {
-  width: 100px;
+  width: 120px;
+  height: 150px;
   margin: -30px auto 20px;
 }
 footer {
