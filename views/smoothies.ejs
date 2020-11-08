@@ -84,7 +84,16 @@
     <strong class="cart-total-title">Total $</strong>
     <span class="cart-total-price">0</span>
   </div>
-  <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+  <div id="fade" class="overlay"></div>
+  <button class="btn btn-primary btn-purchase text" type="button">
+    PURCHASE
+  </button>
+  <div class="popup">
+    <div class="popup-text">
+      <h3>Thank you for purchase!</h3>
+    </div>
+    <a class="popup-close" href="#">Close</a>
+  </div>
 </section>
 
 <%- include('partials/footer'); -%>

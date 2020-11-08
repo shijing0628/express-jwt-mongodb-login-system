@@ -153,11 +153,17 @@ header .btn {
   position: relative;
   text-align: center;
   padding: 0 20px 30px 20px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .recipe img {
   width: 120px;
   height: 150px;
   margin: -30px auto 20px;
+  transition: all 0.6s;
+  border-radius: 10px;
+}
+.recipe img:hover {
+  transform: scale(1.3);
 }
 footer {
   text-align: center;
@@ -303,4 +309,106 @@ footer {
   margin: 50px auto 80px auto;
   padding: 20px;
   font-size: 1.5em;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media li {
+  padding: 10px;
+}
+.social-media li:hover {
+  font-size: 20px;
+}
+.social-media li i:hover {
+  color: purple;
+}
+
+/* pop up window for purchase */
+/* Popup bg overlay */
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #444;
+  z-index: 2001;
+  -moz-opacity: 0.7;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* Transitions */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+}
+
+/* Phone number popup */
+.popup {
+  background: url("/images/bg-cookie.jpg") no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 5px #444;
+  position: absolute;
+  background-color: #333;
+  display: none;
+  position: absolute;
+  /* Not rocket science here */
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  border: 10px solid white;
+  z-index: 20010;
+  overflow: auto;
+  color: green;
+  /* Animation */
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+/* Phone number */
+.popup-text {
+  margin-top: 6%;
+  color: white;
+  text-align: center;
+}
+.popup-text h3 {
+  color: #444;
+}
+/* Close button */
+.popup-close {
+  text-align: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1em;
+  color: #444;
+}
+.popup-close:hover {
+  color: tomato;
+  font-weight: 600px;
+}
+a {
+  /* Animation */
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  /* Link color */
+  color: white;
+}
+/* link, visited, active*/
+a:active {
+  text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+  text-decoration: none;
 }
