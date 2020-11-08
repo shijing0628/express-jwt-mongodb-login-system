@@ -60,7 +60,7 @@ function addCartItem(e) {
   let title = shopItem.querySelector('.shop-item-title').innerText;
   let price = shopItem.querySelector('.shop-item-price').innerText;
   let imageSrc = shopItem.querySelector('.shop-item-image').src;
-  console.log(imageSrc)
+
   addItemToCart(title, price, imageSrc);
   updateCartTotal();
 }
@@ -70,7 +70,7 @@ function addItemToCart(title, price, imageSrc) {
   let cartItems = document.querySelector('.cart-items');
   let cartRow = document.createElement('div');
   cartRow.classList.add('cart-row');
-  let cartItem = document.querySelector('.cart-item');
+
   let cartItemNames = cartItems.querySelectorAll('.cart-item-title');
   cartItemNames.forEach(cartItemName => {
     console.log(cartItemName, title)
@@ -107,7 +107,6 @@ function quantityChanged(e) {
   if (isNaN(input.value) || input.value < 0) {
     input.value = 1;
   }
-
   updateCartTotal();
 }
 
